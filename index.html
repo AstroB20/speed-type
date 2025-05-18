@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- We'll add CSS later -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Speed Typing Game</h1>
+
+      <!-- Sentence to type -->
+      <div id="quote" class="quote">
+        The quick brown fox jumps over the lazy dog.
+      </div>
+
+      <!-- Text area where user types -->
+      <textarea
+        id="typedInput"
+        placeholder="Start typing here..."
+        rows="4"
+        cols="50"
+      ></textarea>
+
+      <!-- Results -->
+      <div id="results" class="results">
+        <p><strong>Time:</strong> <span id="time">0.00</span> seconds</p>
+        <p><strong>WPM:</strong> <span id="wpm">0</span></p>
+        <p><strong>Accuracy:</strong> <span id="accuracy">0</span>%</p>
+      </div>
+
+      <!-- Buttons -->
+      <button id="startBtn">Start Game</button>
+      <button id="restartBtn" disabled>Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- We'll add JS logic here -->
+  </body>
+</html>
